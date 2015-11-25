@@ -11,3 +11,12 @@ pivotal:
 security:
   basic:
     enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka-service.credentials.uri}/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
