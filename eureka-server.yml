@@ -7,5 +7,3 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}/eureka/
-  username: admin
-  password: admin
