@@ -1,4 +1,4 @@
-message: "Olá PanGeaNet!"
+message: "Olá APL!"
 spring:
   profiles: cloud
   application:
