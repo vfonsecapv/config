@@ -2,5 +2,8 @@ spring:
   profiles: cloud
   application:
    name: attendees
+  cloud:
+    services:
+      registrationMethod: route
 spring.jpa.hibernate.ddl-auto: update
 spring.datasource.initialize: false
