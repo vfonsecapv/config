@@ -3,3 +3,5 @@ spring:
   profiles: cloud
   application:
    name: attendees
+spring.jpa.hibernate.ddl-auto: update
+spring.datasource.initialize: false
