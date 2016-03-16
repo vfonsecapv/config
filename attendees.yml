@@ -1,6 +1,17 @@
 spring:
-  profiles: cloud
   application:
-   name: attendees
-message:
-  "ola mundo!"
+    name: cook
+
+---
+
+spring:
+  profiles: dev
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+mensagem: "Ola mundo!"
