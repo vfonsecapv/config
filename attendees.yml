@@ -2,16 +2,16 @@ spring:
   profiles: cloud
   application:
    name: attendees
-  jpa:
-    hibernate:
-      ddl-auto: update
-    datasource:
-      initialize: false
-  security:
-    user: admin
-    password: admin
   cloud:
     services:
       registrationMethod: route
+security:
+  user: admin
+    password: admin
+jpa:
+  hibernate:
+  ddl-auto: update
+datasource:
+  initialize: false
 
 
