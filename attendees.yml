@@ -7,3 +7,5 @@ spring:
       registrationMethod: route
 spring.jpa.hibernate.ddl-auto: update
 spring.datasource.initialize: false
+security.basic.enabled=false
+management.security.enabled=false
