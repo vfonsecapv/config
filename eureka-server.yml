@@ -1,7 +1,8 @@
 spring:
  profiles: cloud
 eureka:
-  enableSelfPreservation:false
+  server:
+    enableSelfPreservation: false
   instance:
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
