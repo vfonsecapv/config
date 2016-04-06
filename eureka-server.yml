@@ -8,4 +8,11 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://eureka-server.bosh-lite.com/eureka
+      defaultZone: http://eureka-server.bosh-lite.com/eureka/
+log4j:
+  rootCategory: INFO,stdout
+  appender:
+    stdout: org.apache.log4j.ConsoleAppender
+      layout: com.netflix.logging.log4jAdapter.NFPatternLayout
+        conversionPattern: %d %-5p %C:%L [%t] [%M] %m%n
+    asyncAppenders=INFO,stdout
