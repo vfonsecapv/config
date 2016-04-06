@@ -8,7 +8,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}/eureka/
+      defaultZone: http://${vcap.application.uris[0]}/eureka/
 log4j:
   rootCategory: INFO,stdout
   appender:
