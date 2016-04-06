@@ -9,10 +9,3 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${vcap.application.uris[0]}/eureka/
-log4j:
-  rootCategory: INFO,stdout
-  appender:
-    stdout: org.apache.log4j.ConsoleAppender
-      layout: com.netflix.logging.log4jAdapter.NFPatternLayout
-  logger:
-    conversionPattern: %d %-5p %C:%L [%t] [%M] %m%nasyncAppenders=INFO,stdout
