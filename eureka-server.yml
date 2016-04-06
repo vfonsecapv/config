@@ -14,5 +14,5 @@ log4j:
   appender:
     stdout: org.apache.log4j.ConsoleAppender
       layout: com.netflix.logging.log4jAdapter.NFPatternLayout
-        conversionPattern: %d %-5p %C:%L [%t] [%M] %m%n
-    asyncAppenders=INFO,stdout
+  logger:
+    conversionPattern: %d %-5p %C:%L [%t] [%M] %m%nasyncAppenders=INFO,stdout
