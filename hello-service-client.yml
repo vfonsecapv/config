@@ -2,3 +2,6 @@ spring:
   profiles: cloud
   application:
    name: hello-service-client
+instance:		
+  hostname: ${vcap.application.uris[0]}		
+  nonSecurePort: 80
