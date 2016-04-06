@@ -4,7 +4,7 @@ turbine:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri}/eureka/
+      defaultZone: http://${vcap.services.eureka-service.credentials.uri}/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
   instance:
