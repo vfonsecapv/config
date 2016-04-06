@@ -1,6 +1,6 @@
 turbine:
   clusterNameExpression: new String("default")
-  appConfig: quotes-service,accounts-service,portfolio-service,web-service
+  appConfig: hello-service,hello-service-client
 eureka:
   client:
     serviceUrl:
