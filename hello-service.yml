@@ -3,6 +3,9 @@ spring:
   profiles: cloud
   application:
    name: hello-service
+ribbon:
+  eureka:
+   enabled: true
 eureka:
   client:
     serviceUrl:
