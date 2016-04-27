@@ -5,7 +5,7 @@ spring:
    name: hello-service
 ribbon:
   eureka:
-   enabled: true
+   enabled: false
 eureka:
   client:
     serviceUrl:
