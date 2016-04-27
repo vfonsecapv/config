@@ -1,15 +1,14 @@
 spring:
  profiles: cloud
 eureka:
-  numberRegistrySyncRetries: 0
-  enableSelfPreservation: false
+  enableSelfPreservation: true
   registration:
-    enabled: false
+    enabled: true
   instance:
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://${vcap.application.uris[0]}/eureka/
