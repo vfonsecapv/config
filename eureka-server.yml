@@ -6,6 +6,8 @@ eureka:
     enabled: true
   instance:
     hostname: ${vcap.application.uris[0]}
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     nonSecurePort: 80
   client:
     registerWithEureka: true
