@@ -11,6 +11,6 @@ eureka:
     nonSecurePort: 80
   client:
     registerWithEureka: false
-    fetchRegistry: true
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${vcap.application.uris[0]}/eureka/
