@@ -2,12 +2,6 @@ spring:
   profiles: cloud
   application:
    name: hello-service-client
-feign:
-  compression:
-    request:
-      enabled: true
-    response:
-      enable: true
 eureka:
   client:
     serviceUrl:
